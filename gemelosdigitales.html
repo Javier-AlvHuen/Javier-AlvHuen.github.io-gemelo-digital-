@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemelos Digitales: Transformando el Mantenimiento Moderno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background for a professional feel */
+            color: #1a202c; /* Dark gray text */
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%); /* Tech blue gradient */
+        }
+        .section-title {
+            color: #0052D4; /* Primary blue for titles */
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .citation-link {
+            font-size: 0.75em;
+            vertical-align: super;
+            color: #4364F7; /* Accent blue for citations */
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .citation-link:hover {
+            text-decoration: underline;
+        }
+        #citation-popup {
+            position: fixed;
+            background-color: white;
+            border: 1px solid #e2e8f0; /* Light gray border */
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            z-index: 1000;
+            max-width: 350px;
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: #2d3748; /* Medium gray text */
+        }
+        #citation-popup a {
+            color: #0052D4;
+            text-decoration: underline;
+        }
+        #citation-popup strong {
+            color: #1a202c;
+        }
+        .icon-placeholder { /* For SVG icons */
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .highlight-stat {
+            background-color: #e0f2fe; /* Light blue highlight */
+            color: #0052D4; /* Primary blue text */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .tech-tag {
+            background-color: #d1fae5; /* Light green for tech tags */
+            color: #065f46; /* Dark green text */
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 500;
+            margin: 2px;
+            display: inline-block;
+        }
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f0f2f5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4364F7;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0052D4;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="header-bg text-white py-12 sm:py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold leading-tight">Gemelos Digitales:</h1>
+            <p class="text-xl sm:text-2xl mt-4 font-light">Transformando el Mantenimiento en la Era Moderna</p>
+            <p class="text-sm mt-2">Basado en "El Rol Crucial del Gemelo Digital en la Transformación del Mantenimiento Moderno" <a href="#" class="citation-link" data-citation-key="doc">PDF</a></p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="introduccion" class="mb-16">
+            <h2 class="text-3xl font-semibold section-title mb-6 text-center">1. ¿Qué es un Gemelo Digital?</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Definición y Evolución</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Un Gemelo Digital (GD) es una <strong class="text-gray-900">réplica virtual dinámica</strong> de un activo, proceso o sistema físico. Se actualiza continuamente con datos en tiempo real, marcando una transformación fundamental en el mantenimiento moderno <a href="#" class="citation-link" data-citation-key="1">[1]</a>.
+                        Introducido por Michael Grieves en 2002, ha evolucionado de un modelo digital enriquecido a una entidad interactiva y predictiva <a href="#" class="citation-link" data-citation-key="1">[1]</a>.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Se distingue de un "modelo digital" (estático) y una "sombra digital" (flujo unidireccional) por su <strong class="text-gray-900">flujo de datos bidireccional y automático</strong>, cerrando el bucle entre el mundo físico y el ciberespacio <a href="#" class="citation-link" data-citation-key="3">[3]</a>.
+                    </p>
+                </div>
+                <div class="card p-8">
+                     <img src="https://placehold.co/600x400/E0F2FE/0052D4?text=Representación+Gemelo+Digital" alt="[Imagen de Representación de un Gemelo Digital]" class="rounded-lg shadow-md mx-auto" onerror="this.src='https://placehold.co/600x400/cccccc/333333?text=Imagen+no+disponible';">
+                </div>
+            </div>
+        </section>
+
+        <section id="componentes" class="mb-16">
+            <h2 class="text-3xl font-semibold section-title mb-6 text-center">2. Anatomía de un Gemelo Digital</h2>
+            <div class="card p-8">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Componentes Fundamentales <a href="#" class="citation-link" data-citation-key="1">[1]</a></h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-3 leading-relaxed">
+                    <li><strong>Entidad Física:</strong> El activo real que se modela.</li>
+                    <li><strong>Contraparte Virtual:</strong> El modelo computacional que representa al activo.</li>
+                    <li><strong>Conexión de Datos:</strong> Flujo de información continuo y sincronización.</li>
+                </ul>
+                <h3 class="text-2xl font-semibold mt-6 mb-4 text-gray-800">Tecnologías Habilitadoras Clave <a href="#" class="citation-link" data-citation-key="1">[1]</a></h3>
+                 <div class="flex flex-wrap justify-center gap-2 mb-4">
+                    <span class="tech-tag">IoT / IIoT</span>
+                    <span class="tech-tag">Big Data</span>
+                    <span class="tech-tag">Inteligencia Artificial (IA)</span>
+                    <span class="tech-tag">Machine Learning (ML)</span>
+                    <span class="tech-tag">Modelado y Simulación</span>
+                </div>
+                <p class="text-gray-700 leading-relaxed">
+                    Estos elementos incluyen: modelo de información detallado, sistema de adquisición de datos (sensores <span class="tech-tag">IoT/IIoT</span>), mecanismo de comunicación, plataforma de datos y análisis (<span class="tech-tag">Big Data</span>, <span class="tech-tag">IA/ML</span>), y software de modelado y simulación. La robustez del GD depende de la calidad e integración de cada componente <a href="#" class="citation-link" data-citation-key="1">[1]</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="paradigma" class="mb-16">
+            <h2 class="text-3xl font-semibold section-title mb-6 text-center">3. Revolución en el Mantenimiento</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Del Tradicional al Inteligente</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        El GD acelera la transición desde enfoques tradicionales:
+                    </p>
+                    <ul class="list-none space-y-2 mb-4">
+                        <li><span class="font-semibold text-red-600">Reactivo:</span> Reparar tras el fallo <a href="#" class="citation-link" data-citation-key="7">[7]</a>.</li>
+                        <li><span class="font-semibold text-yellow-600">Preventivo:</span> Mantenimiento programado, independientemente de la condición real <a href="#" class="citation-link" data-citation-key="7">[7]</a>.</li>
+                    </ul>
+                     <p class="text-gray-700 leading-relaxed mb-3">
+                        Hacia estrategias avanzadas habilitadas por el GD:
+                    </p>
+                    <ul class="list-none space-y-2">
+                        <li><span class="font-semibold text-green-600">Predictivo (PdM):</span> Predecir fallos monitorizando la condición <a href="#" class="citation-link" data-citation-key="8">[8]</a>.</li>
+                        <li><span class="font-semibold text-blue-600">Prescriptivo (PxM):</span> No solo predice, sino que recomienda acciones <a href="#" class="citation-link" data-citation-key="10">[10]</a>.</li>
+                    </ul>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Importancia Estratégica</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        El GD mejora la toma de decisiones con datos precisos y en tiempo real, optimizando la gestión de activos <a href="#" class="citation-link" data-citation-key="3">[3]</a>.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Impacto en la eficiencia operativa: reducción de paradas no planificadas, optimización de recursos y mejora del OEE.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        El mercado global de Gemelos Digitales se proyecta alcanzar los <span class="highlight-stat">$110.1 mil millones para 2028</span> (CAGR 61.3%) <a href="#" class="citation-link" data-citation-key="12">[12]</a>, subrayando su valor estratégico.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios-apps" class="mb-16">
+            <h2 class="text-3xl font-semibold section-title mb-8 text-center">4. Impacto y Aplicaciones Clave</h2>
+            
+            <div class="card p-8 mb-8">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Potenciando el Mantenimiento Predictivo (PdM)</h3>
+                <div class="flex items-center mb-3">
+                    <svg class="icon-placeholder text-blue-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 7h-2v5.414l3.293 3.293 1.414-1.414L13 11.586V7z"></path></svg>
+                    <p class="text-gray-700 leading-relaxed">
+                        El GD permite: monitorización continua, análisis avanzado con <span class="tech-tag">IA/ML</span> para estimar Vida Útil Restante (RUL) <a href="#" class="citation-link" data-citation-key="2">[2]</a>, diagnóstico remoto y Mantenimiento Basado en Condición (CBM) optimizado <a href="#" class="citation-link" data-citation-key="5">[5]</a>.
+                    </p>
+                </div>
+                <h4 class="text-xl font-semibold text-gray-700 my-4">Beneficios Cuantificables del PdM con GD:</h4>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+                    <div class="p-4 bg-blue-50 rounded-lg">
+                        <p class="text-2xl font-bold text-blue-700">30-65%</p>
+                        <p class="text-sm text-blue-600">Reducción tiempo de inactividad <a href="#" class="citation-link" data-citation-key="17">[17]</a><a href="#" class="citation-link" data-citation-key="18">[18]</a></p>
+                    </div>
+                    <div class="p-4 bg-green-50 rounded-lg">
+                        <p class="text-2xl font-bold text-green-700">20-45%</p>
+                        <p class="text-sm text-green-600">Reducción costos de mantenimiento <a href="#" class="citation-link" data-citation-key="17">[17]</a><a href="#" class="citation-link" data-citation-key="18">[18]</a></p>
+                    </div>
+                    <div class="p-4 bg-indigo-50 rounded-lg">
+                        <p class="text-2xl font-bold text-indigo-700">Hasta 30%</p>
+                        <p class="text-sm text-indigo-600">Mejora en OEE <a href="#" class="citation-link" data-citation-key="17">[17]</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Simulación y Optimización</h3>
+                     <div class="flex items-center mb-3">
+                        <svg class="icon-placeholder text-purple-600" viewBox="0 0 24 24" fill="currentColor"><path d="M19.999 2.001H4c-1.103 0-2 .898-2 2.002v16.001c0 1.103.897 1.996 2 1.996h16c1.103 0 2-.898 2-2V4c0-1.103-.897-1.999-2.001-1.999zM8 4h8v2H8V4zm8 16H8v-2h8v2zm4-4H4V8h16v8z"></path><circle cx="12" cy="12" r="2" fill="#FFF"></circle></svg>
+                        <p class="text-gray-700 leading-relaxed">
+                        Análisis "qué pasaría si" para escenarios operativos y de fallo <a href="#" class="citation-link" data-citation-key="3">[3]</a><a href="#" class="citation-link" data-citation-key="5">[5]</a>. Optimización de estrategias de mantenimiento, entrenamiento (Ford <a href="#" class="citation-link" data-citation-key="12">[12]</a>) y diseño (Tesla <a href="#" class="citation-link" data-citation-key="17">[17]</a>).
+                        Optimización del consumo de energía (hasta 30% de ahorro) <a href="#" class="citation-link" data-citation-key="22">[22]</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Gestión del Ciclo de Vida del Activo (ALM)</h3>
+                    <div class="flex items-center mb-3">
+                        <svg class="icon-placeholder text-teal-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"></path></svg>
+                        <p class="text-gray-700 leading-relaxed">
+                        Cubre desde el diseño <a href="#" class="citation-link" data-citation-key="4">[4]</a><a href="#" class="citation-link" data-citation-key="5">[5]</a> (Tesla redujo tiempo de desarrollo 40% <a href="#" class="citation-link" data-citation-key="17">[17]</a>) y fabricación <a href="#" class="citation-link" data-citation-key="5">[5]</a>, hasta operación, mantenimiento y desmantelamiento (apoyando economía circular <a href="#" class="citation-link" data-citation-key="10">[10]</a>). El concepto de "Hilo Digital" <a href="#" class="citation-link" data-citation-key="10">[10]</a> es clave.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="casos-estudio" class="mb-16">
+            <h2 class="text-3xl font-semibold section-title mb-8 text-center">5. Gemelos Digitales en Acción</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Manufactura</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">BMW: Reducción 24% tiempo planificación, mejora 18% OEE, €80M ahorro anual <a href="#" class="citation-link" data-citation-key="17">[17]</a>.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mt-2">Unilever: Reducción 65% tiempo inactividad, 20% consumo energía <a href="#" class="citation-link" data-citation-key="17">[17]</a>.</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Aeroespacial</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Rolls-Royce: Monitorización y PdM de motores de avión <a href="#" class="citation-link" data-citation-key="24">[24]</a>.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mt-2">GE Aviation: Aumento 10% eficiencia producción, $64M ahorro anual <a href="#" class="citation-link" data-citation-key="17">[17]</a>.</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Energía</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Parques Eólicos: Optimización de turbinas, PdM <a href="#" class="citation-link" data-citation-key="14">[14]</a>.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mt-2">Smart Grids: Monitorización y predicción en redes eléctricas <a href="#" class="citation-link" data-citation-key="2">[2]</a>.</p>
+                     <p class="text-sm text-gray-600 leading-relaxed mt-2">Plantas de Energía: Reducción consumo combustible (hasta 10%) <a href="#" class="citation-link" data-citation-key="22">[22]</a>.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="desafios" class="mb-16">
+            <h2 class="text-3xl font-semibold section-title mb-8 text-center">6. Superando los Desafíos de Implementación</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-8">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Costos e Integración</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 leading-relaxed">
+                        <li>Inversión inicial considerable (hardware, software, personal) <a href="#" class="citation-link" data-citation-key="14">[14]</a><a href="#" class="citation-link" data-citation-key="25">[25]</a>. ROI puede ser del 334% en 3 años <a href="#" class="citation-link" data-citation-key="17">[17]</a>.</li>
+                        <li>Complejidad de integración de datos (sistemas heredados, silos) <a href="#" class="citation-link" data-citation-key="21">[21]</a><a href="#" class="citation-link" data-citation-key="22">[22]</a>.</li>
+                        <li>Necesidad de calidad y fidelidad de datos y modelos <a href="#" class="citation-link" data-citation-key="14">[14]</a><a href="#" class="citation-link" data-citation-key="4">[4]</a>.</li>
+                    </ul>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Seguridad y Talento</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 leading-relaxed">
+                        <li>Ciberseguridad: Amplia superficie de ataque, privacidad de datos (GDPR) <a href="#" class="citation-link" data-citation-key="14">[14]</a><a href="#" class="citation-link" data-citation-key="30">[30]</a>.</li>
+                        <li>Escasez de talento especializado (ciencia de datos, IA/ML, modelado) <a href="#" class="citation-link" data-citation-key="14">[14]</a>.</li>
+                        <li>Necesidad de cambio cultural y formación (upskilling/reskilling) <a href="#" class="citation-link" data-citation-key="14">[14]</a><a href="#" class="citation-link" data-citation-key="30">[30]</a>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="futuro" class="mb-16">
+            <h2 class="text-3xl font-semibold section-title mb-8 text-center">7. El Futuro es Inteligente y Conectado</h2>
+            <div class="card p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Mantenimiento Autónomo y Prescriptivo</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Evolución hacia el Mantenimiento Prescriptivo (PxM) que recomienda acciones <a href="#" class="citation-link" data-citation-key="10">[10]</a>, y sistemas de mantenimiento autónomo que pueden ejecutar tareas o ajustes <a href="#" class="citation-link" data-citation-key="10">[10]</a><a href="#" class="citation-link" data-citation-key="32">[32]</a>.
+                        </p>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Sostenibilidad y Economía Circular</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Optimización de recursos <a href="#" class="citation-link" data-citation-key="3">[3]</a>, extensión vida útil <a href="#" class="citation-link" data-citation-key="5">[5]</a>, diseño para sostenibilidad y facilitación del reciclaje <a href="#" class="citation-link" data-citation-key="10">[10]</a>. Potencial de reducción de carbono del 15% <a href="#" class="citation-link" data-citation-key="19">[19]</a>.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Integración con Tecnologías Emergentes</h3>
+                         <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">IA Avanzada (Deep Learning, XAI)</span> <a href="#" class="citation-link" data-citation-key="10">[10]</a>
+                            <span class="tech-tag">Edge Computing</span> <a href="#" class="citation-link" data-citation-key="26">[26]</a>
+                            <span class="tech-tag">5G / 6G</span>
+                            <span class="tech-tag">Blockchain</span> <a href="#" class="citation-link" data-citation-key="23">[23]</a>
+                            <span class="tech-tag">AR / VR</span> <a href="#" class="citation-link" data-citation-key="23">[23]</a>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            La convergencia con estas tecnologías potenciará las capacidades de los GD.
+                        </p>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Democratización y Estandarización</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Plataformas más accesibles (SaaS <a href="#" class="citation-link" data-citation-key="14">[14]</a>), adopción por PYMEs <a href="#" class="citation-link" data-citation-key="19">[19]</a>, y desarrollo de estándares (Digital Twin Consortium) para mayor interoperabilidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="mb-16">
+            <h2 class="text-3xl font-semibold section-title mb-6 text-center">8. Conclusión: La Era del Mantenimiento 4.0</h2>
+            <div class="card p-8">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    El Gemelo Digital es una tecnología disruptiva fundamental para el mantenimiento moderno y la gestión de activos. Permite una transición hacia un mantenimiento predictivo y prescriptivo, ofreciendo beneficios cuantitativos sustanciales en eficiencia, costos y vida útil de los activos <a href="#" class="citation-link" data-citation-key="doc">[PDF]</a>.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Aunque existen desafíos en su implementación, su evolución continua, integrada con otras tecnologías emergentes, promete un futuro con mantenimiento más autónomo, inteligente y sostenible. Las organizaciones que adopten esta tecnología estarán mejor posicionadas para liderar en la era del mantenimiento 4.0 <a href="#" class="citation-link" data-citation-key="doc">[PDF]</a>.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 text-center">
+        <p class="text-sm">Presentación interactiva sobre Gemelos Digitales.</p>
+        <p class="text-xs mt-1">Contenido basado en el informe "El Rol Crucial del Gemelo Digital en la Transformación del Mantenimiento Moderno".</p>
+    </footer>
+
+    <div id="citation-popup" class="hidden">
+        <button id="close-popup" class="absolute top-2 right-3 text-xl font-bold text-gray-600 hover:text-gray-900">&times;</button>
+        <p id="citation-text" class="text-sm"></p>
+        <a id="citation-url" href="#" target="_blank" rel="noopener noreferrer" class="text-xs block mt-2 hover:underline">Ver fuente</a>
+    </div>
+
+    <script>
+        const citations = {
+            "doc": { text: "Información general extraída del documento PDF: 'El Rol Crucial del Gemelo Digital en la Transformación del Mantenimiento Moderno: Un Análisis Integral con Enfoque Educativo, Evidencia y Casos de Estudio'.", url: "#" }, // Placeholder, link to PDF if available
+            "1": { text: "Overview of predictive maintenance based on digital twin... (PMC NCBI)", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10070392/" },
+            "2": { text: "Applications of Digital Twins in Predictive Maintenance of ... (ResearchGate)", url: "https://www.researchgate.net/publication/388414391_Applications_of_Digital_Twins_in_Predictive_Maintenance_of_Mechanical_Systems" },
+            "3": { text: "What are Digital Twins: Optimizing Enterprise Maintenance - Prometheus Group", url: "https://www.prometheusgroup.com/resources/posts/digital-twins-what-are-they-and-how-are-they-shaking-up-enterprise-maintenance" },
+            "4": { text: "Digital Twin: A Quick Overview (ITEA)", url: "https://itea.org/journals/volume-45-1/digital-twin-a-quick-overview/" },
+            "5": { text: "Transforming Maintenance Strategies: The Impact of Digital Twins... (FieldCircle)", url: "https://www.fieldcircle.com/articles/digital-twins-are-reshaping-maintenance-strategies/" },
+            "7": { text: "Maintenance management digital twins are here to stay (ClickMaint)", url: "https://www.clickmaint.com/blog/maintenance-management-digital-twins" },
+            "8": { text: "Using Digital Twins for Predictive Maintenance in Manufacturing (Divami)", url: "https://divami.com/news/using-digital-twins-for-predictive-maintenance-in-manufacturing/" },
+            "10": { text: "Digital Twin for Predictive Maintenance - ResearchGate", url: "https://www.researchgate.net/profile/Zheng-Liu-48/publication/370270520_Digital_twin_for_predictive_maintenance/links/6454060d809a53502149c3d1/Digital-twin-for-predictive-maintenance.pdf" },
+            "12": { text: "The Importance of Digital Twins in Maintenance - KnowHow (Distrelec)", url: "https://knowhow.distrelec.com/mro/the-importance-of-digital-twins-in-maintenance/" },
+            "14": { text: "Digital Twin in the Energy Sector: Benefits, Use Cases, and Examples (Appinventiv)", url: "https://appinventiv.com/blog/digital-twin-in-energy-sector/" },
+            "17": { text: "7 Data-Driven Insights on Digital Twin in Manufacturing - Number Analytics", url: "https://www.numberanalytics.com/blog/digital-twin-manufacturing-insights" },
+            "18": { text: "Manufacturing Example - Deep Research | Ninja AI", url: "https://www.ninjatech.ai/use-cases/deep-research-manufacturing" },
+            "19": { text: "Three Key Findings from the Digital Twin Trends Report - Hexagon", url: "https://aliresources.hexagon.com/smart-digital-reality/three-key-findings-from-the-digital-twin-trends-report" },
+            "21": { text: "Digital Twin | Explained | Energy Efficiency Examples (Energy Advice Hub)", url: "https://energyadvicehub.org/digital-twin-technolgy-what-is-it-and-how-will-it-impact-the-energy-sector/" },
+            "22": { text: "Analysis of Digital Twin Applications in Energy Efficiency: A Systematic Review - MDPI", url: "https://www.mdpi.com/2071-1050/17/8/3560" },
+            "23": { text: "Accelerating Product Development Cycles With Digital Twins and IoT Integration (IGI Global)", url: "https://www.igi-global.com/book/accelerating-product-development-cycles-digital/367271" },
+            "24": { text: "Rolls Royce's Use of Digital Twin Technology Case Study - ISM, Inc.", url: "https://ismguide.com/rolls-royce-use-of-digital-twin-technology-case-study/" },
+            "25": { text: "A Digital Twin Framework Utilizing Machine Learning for Robust Predictive Maintenance (ASME)", url: "https://asmedigitalcollection.asme.org/computingengineering/article/doi/10.1115/1.4067270/1209973/A-Digital-Twin-Framework-Utilizing-Machine" },
+            "26": { text: "Understanding Digital Twins: How They Work & Why They Matter - Prevu3D", url: "https://www.prevu3d.com/news/understanding-digital-twins/" },
+            "29": { text: "A Practical Guide to Digital Twin Manufacturing - The Top ERP Systems", url: "https://www.top10erp.org/blog/digital-twin-manufacturing-guide" },
+            "30": { text: "Digital Twins in Asset Management: What You Need to Know (Llumin)", url: "https://llumin.com/digital-twins-in-asset-management-what-you-need-to-know/" },
+            "32": { text: "An optimization-centric review on integrating artificial intelligence ... (ResearchGate)", url: "https://www.researchgate.net/publication/387699877_An_optimization-centric_review_on_integrating_artificial_intelligence_and_digital_twin_technologies_in_manufacturing" },
+            "47": { text: "A Review of the Digital Twin Technology in the AEC-FM Industry - ResearchGate", url: "https://www.researchgate.net/publication/359303582_A_Review_of_the_Digital_Twin_Technology_in_the_AEC-FM_Industry" },
+            "50": { text: "Exclusive SEAB interview: Exploring digital twin technology in ... (ESRI Singapore)", url: "https://esrisingapore.com.sg/blog/exclusive-seab-interview-exploring-digital-twin-technology-architecture-and-construction" }
+        };
+
+        const citationLinks = document.querySelectorAll('.citation-link');
+        const popup = document.getElementById('citation-popup');
+        const popupText = document.getElementById('citation-text');
+        const popupUrl = document.getElementById('citation-url');
+        const closePopupButton = document.getElementById('close-popup');
+
+        citationLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const key = this.dataset.citationKey;
+                const citationData = citations[key];
+                if (citationData) {
+                    popupText.innerHTML = `<strong>Fuente [${key}]:</strong> ${citationData.text}`;
+                    if (citationData.url && citationData.url !== "#") {
+                        popupUrl.href = citationData.url;
+                        popupUrl.style.display = 'block';
+                    } else {
+                        popupUrl.style.display = 'none';
+                    }
+                    
+                    // Position popup near the clicked link
+                    const rect = link.getBoundingClientRect();
+                    popup.style.left = `${rect.left + window.scrollX}px`;
+                    let topPosition = rect.bottom + window.scrollY + 5;
+                    if (topPosition + popup.offsetHeight > window.innerHeight + window.scrollY) {
+                        topPosition = rect.top + window.scrollY - popup.offsetHeight - 5;
+                    }
+                    popup.style.top = `${topPosition}px`;
+
+                    popup.classList.remove('hidden');
+                }
+            });
+        });
+
+        closePopupButton.addEventListener('click', () => {
+            popup.classList.add('hidden');
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!popup.classList.contains('hidden')) {
+                const isClickInsidePopup = popup.contains(event.target);
+                const isClickOnCitationLink = Array.from(citationLinks).some(link => link.contains(event.target));
+                if (!isClickInsidePopup && !isClickOnCitationLink) {
+                    popup.classList.add('hidden');
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
